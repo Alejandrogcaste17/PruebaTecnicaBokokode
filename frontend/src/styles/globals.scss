@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/*@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #171717;
+    --foreground: #ffffff;
+  }
+}*/
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Inter Tight', Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1440px; 
+  margin: 0 auto; 
+  padding: 0 1rem; 
+} 
+
+.pagination-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.2s;
+}
+
+.pagination-btn:disabled {
+  color: #c0c0c0;
+  cursor: default;
+}
+
+.pagination-active {
+  font-weight: bold;
+  color: #000;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  color: #000;
+}
+
